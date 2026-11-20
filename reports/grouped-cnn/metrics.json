@@ -1,0 +1,83 @@
+{
+  "accuracy": 0.8694594308685073,
+  "macro_f1": 0.5220864947176294,
+  "per_class": {
+    "background": {
+      "precision": 0.9917165795845546,
+      "recall": 0.8814135236153585,
+      "f1-score": 0.9333173422883185,
+      "support": 8829.0
+    },
+    "pothole": {
+      "precision": 0.31446540880503143,
+      "recall": 0.6944444444444444,
+      "f1-score": 0.4329004329004329,
+      "support": 288.0
+    },
+    "evasive_maneuver": {
+      "precision": 0.22075055187637968,
+      "recall": 0.591715976331361,
+      "f1-score": 0.3215434083601286,
+      "support": 169.0
+    },
+    "emergency_braking": {
+      "precision": 0.26499032882011603,
+      "recall": 0.8203592814371258,
+      "f1-score": 0.40058479532163743,
+      "support": 167.0
+    },
+    "accuracy": 0.8694594308685073,
+    "macro avg": {
+      "precision": 0.44798071727152045,
+      "recall": 0.7469833064570724,
+      "f1-score": 0.5220864947176294,
+      "support": 9453.0
+    },
+    "weighted avg": {
+      "precision": 0.9444612236398973,
+      "recall": 0.8694594308685073,
+      "f1-score": 0.8977226950778021,
+      "support": 9453.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      7782,
+      390,
+      301,
+      356
+    ],
+    [
+      38,
+      200,
+      38,
+      12
+    ],
+    [
+      17,
+      40,
+      100,
+      12
+    ],
+    [
+      10,
+      6,
+      14,
+      137
+    ]
+  ],
+  "macro_f1_95_percentile_interval": [
+    0.487328563740255,
+    0.5669328000520901
+  ],
+  "resampling_unit": "recording",
+  "replicates": 1000,
+  "note": "Conditional on these OOF predictions; does not capture model-refit or rider uncertainty",
+  "outer_fold_macro_f1": [
+    0.550200725137395,
+    0.4522067269598811,
+    0.5338507122908306,
+    0.48789928596124177,
+    0.5992721895851565
+  ]
+}

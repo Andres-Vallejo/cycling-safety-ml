@@ -1,0 +1,348 @@
+{
+  "schema_version": 1,
+  "data_kind": "rebuilt_from_raw_sensor_csvs",
+  "windows": 9453,
+  "recordings": 11,
+  "derived_file_sha256": "bc9ca63a6a48d12ce118a6950472d20e120a30fa9296080ad67aa22c2fbb45fc",
+  "features": [
+    "ax_mean",
+    "ax_std",
+    "ax_min",
+    "ax_max",
+    "ax_range",
+    "ax_rms",
+    "ax_skew",
+    "ax_kurt",
+    "ax_p05",
+    "ax_p95",
+    "ay_mean",
+    "ay_std",
+    "ay_min",
+    "ay_max",
+    "ay_range",
+    "ay_rms",
+    "ay_skew",
+    "ay_kurt",
+    "ay_p05",
+    "ay_p95",
+    "az_mean",
+    "az_std",
+    "az_min",
+    "az_max",
+    "az_range",
+    "az_rms",
+    "az_skew",
+    "az_kurt",
+    "az_p05",
+    "az_p95",
+    "gx_mean",
+    "gx_std",
+    "gx_min",
+    "gx_max",
+    "gx_range",
+    "gx_rms",
+    "gx_skew",
+    "gx_kurt",
+    "gx_p05",
+    "gx_p95",
+    "gy_mean",
+    "gy_std",
+    "gy_min",
+    "gy_max",
+    "gy_range",
+    "gy_rms",
+    "gy_skew",
+    "gy_kurt",
+    "gy_p05",
+    "gy_p95",
+    "gz_mean",
+    "gz_std",
+    "gz_min",
+    "gz_max",
+    "gz_range",
+    "gz_rms",
+    "gz_skew",
+    "gz_kurt",
+    "gz_p05",
+    "gz_p95",
+    "a_mag_mean",
+    "a_mag_std",
+    "a_mag_max",
+    "a_mag_range",
+    "a_mag_rms",
+    "a_mag_p99",
+    "g_mag_mean",
+    "g_mag_std",
+    "g_mag_max",
+    "g_mag_range",
+    "g_mag_rms",
+    "g_mag_p99"
+  ],
+  "labels": [
+    "background",
+    "pothole",
+    "evasive_maneuver",
+    "emergency_braking"
+  ],
+  "preprocessing": {
+    "sampling_hz": 50,
+    "window_samples": 128,
+    "stride_samples": 64,
+    "max_interpolation_gap_samples": 3,
+    "background_guard_seconds": 1.28,
+    "annotation_timing": "recorded button-press time, no peak realignment",
+    "mixed_class_windows": "excluded",
+    "augmentation": "none",
+    "input_sensors": [
+      "Accelerometer.csv",
+      "Gyroscope.csv",
+      "Annotation.csv"
+    ]
+  },
+  "class_counts": {
+    "background": 8829,
+    "pothole": 288,
+    "evasive_maneuver": 169,
+    "emergency_braking": 167
+  },
+  "raw_sensor_files_sha256": {
+    "rec_6ecaaa29356c/Gyroscope.csv": "3516dfd72957705379949355f3c04d4f8bbb88c76efa8e1262ec05143bfaba87",
+    "rec_6ecaaa29356c/Annotation.csv": "332e7591840faf2b5a0464ea836c06bc3d7b85014f851b9292e6c40f71e41c6b",
+    "rec_6ecaaa29356c/Accelerometer.csv": "02839bd25ac9258bf3f669fa113b8d949a9f01e734ced1b5fe222fe3fbed55c3",
+    "rec_7c0af10a9845/Annotation.csv": "5ba8191c0d1135816ffd79cbcb90f8f77db1f1e0bb9344d7456d120a7148fc58",
+    "rec_7c0af10a9845/Gyroscope.csv": "19d43b22b5a4c13b02da1aea25865fefad13c40e11ea27d3111ac5059acc7883",
+    "rec_7c0af10a9845/Accelerometer.csv": "ab0f689c96943c1d502935371d70c29442ba1d686d55f1a384576f030298caad",
+    "rec_fe6551e8ef67/Accelerometer.csv": "eee05a45d9eb0b27f4e601595c49f62fe44e90167fcdf49e3c7b9a5b4fd3ce63",
+    "rec_fe6551e8ef67/Annotation.csv": "58f3943c46f11d1857adc908578a071b59eb4e8068617c6cff50cee72b3cfd0a",
+    "rec_fe6551e8ef67/Gyroscope.csv": "a75a0a92b86f40922c21c550bf6faba108423b7be283e355051a178419b76ba4",
+    "rec_5fbe1b677a54/Accelerometer.csv": "5477b370aa639fc1418152c9bf4e9a10a454de0dbc83773c58b6bc80c6c55c77",
+    "rec_5fbe1b677a54/Annotation.csv": "e62f21b250dc1b997ba181ea7f3a3960abe66b9d5e5e08d6aee74c56d4354ef3",
+    "rec_5fbe1b677a54/Gyroscope.csv": "78ebc2bd72432a55d9f0d348185031092cfbb90f985f7324401391213fc390f7",
+    "rec_03b3da82b442/Accelerometer.csv": "51619e4f50b0e2cd2dc76dd28d351a2e74740ff2ca3414162e942b09f89e576f",
+    "rec_03b3da82b442/Gyroscope.csv": "ae2a1d7873a81e8c1b23a263fd2815e795f89fb98d49856e222d45f5caf36ba0",
+    "rec_03b3da82b442/Annotation.csv": "17fb72c83fb07d787cc0f23b9df8718a076957ac1ececef7a788518d09880374",
+    "rec_19357355d415/Gyroscope.csv": "00abf4247f1bdbecc03f20798d41d25b6dc64ce386955dd10ef9ed85b6ba25b8",
+    "rec_19357355d415/Annotation.csv": "289ecee43be1be93ca5eb748e5af8cbc9206010005ace0f288437afd8f6157ca",
+    "rec_19357355d415/Accelerometer.csv": "a8c77d5b32f9a7b2111e81d4fcb05e19dcf4d8fc2e94b34590cac30cb27f1bb1",
+    "rec_b098d4de649b/Accelerometer.csv": "19b94a72075ea690acc5b7fa31138b98ce9ee6bb87e1a0d1c8dd55d807dd5ede",
+    "rec_b098d4de649b/Gyroscope.csv": "009e69d9c58057063f3fe1109a67ae632d46b0515da382d919b4a67d2bf74ac1",
+    "rec_b098d4de649b/Annotation.csv": "573da2b42e9e851315c3f0f238cbbe7eaf9047ecc3924d2b2066fba5950c0d1d",
+    "rec_8991f2234adc/Annotation.csv": "126ae003d0849909daa6aa2a57f0aa1c4353d5621d4d3ea2752397c7ba92d814",
+    "rec_8991f2234adc/Accelerometer.csv": "78785deee60c0a387e3fd51c6d76082e066d94115fa6e580d38acc6696b04f6e",
+    "rec_8991f2234adc/Gyroscope.csv": "7b542ecab370738e6897ffb6c1bb85f8a7d8b6a5ed570a3b45330c59c732e536",
+    "rec_788453ad69be/Accelerometer.csv": "979cd41c280bee74e0626cf71bc55114ffb85eb31ae88f04b039161f277d66a9",
+    "rec_788453ad69be/Gyroscope.csv": "cbf9b06aaaa11342455caed34409cc61587136f28ee3c03c1d8d2b059747f1d6",
+    "rec_788453ad69be/Annotation.csv": "eb604349dcd789b591ba44d997ee6c0ceba2ba95421db4ae9535e42f99f80191",
+    "rec_2834e0e40eca/Annotation.csv": "9c2b555d97385c052e34c6714dda5c63dcb4c68ba67641a3353dfe6a529732a3",
+    "rec_2834e0e40eca/Gyroscope.csv": "b7e2cb688e6772f82d904065347ccb85615f29b20d929fac3b968443023b709b",
+    "rec_2834e0e40eca/Accelerometer.csv": "abc3cebcdac2a03472c1d0f75b7c853c3a9e2d91abddbed8c78e00e0e96b83bc",
+    "rec_823751e4ffca/Annotation.csv": "99fdd138cdf619fbd9e991a5df374b103ef4455c750a928f6dc66e728f40b1d0",
+    "rec_823751e4ffca/Accelerometer.csv": "f1fc9f820f832b5f3d3befd70098fae17a53627650e671754f02e9563efe3dfb",
+    "rec_823751e4ffca/Gyroscope.csv": "4a7157fe860cdddf810037062489b9420ef364fa61524ac317e294bfcb51b4d8"
+  },
+  "archive_sha256": {
+    "CyclingSafety-20261120T185416Z-1-001.zip": "cf3bc8c59d7b0f0be32bab1fb2b505f0070553222e2b50826d204868979e0370",
+    "CyclingSafety-20261120T185416Z-1-002.zip": "b1278e7b30f77d66ac0b5801d7ed511809692c5e51ec14750d6ff74024d23b0f"
+  },
+  "recording_reports": [
+    {
+      "recording_id": "rec_6ecaaa29356c",
+      "windows": 659,
+      "annotation_presses": 18,
+      "decisions": {
+        "candidates": 708,
+        "missing_sensor_samples": 14,
+        "mixed_class": 0,
+        "background_guard": 35
+      },
+      "class_counts": {
+        "background": 623,
+        "pothole": 14,
+        "evasive_maneuver": 10,
+        "emergency_braking": 12
+      }
+    },
+    {
+      "recording_id": "rec_7c0af10a9845",
+      "windows": 1210,
+      "annotation_presses": 51,
+      "decisions": {
+        "candidates": 1357,
+        "missing_sensor_samples": 50,
+        "mixed_class": 4,
+        "background_guard": 93
+      },
+      "class_counts": {
+        "background": 1119,
+        "pothole": 44,
+        "evasive_maneuver": 29,
+        "emergency_braking": 18
+      }
+    },
+    {
+      "recording_id": "rec_fe6551e8ef67",
+      "windows": 472,
+      "annotation_presses": 34,
+      "decisions": {
+        "candidates": 543,
+        "missing_sensor_samples": 11,
+        "mixed_class": 1,
+        "background_guard": 59
+      },
+      "class_counts": {
+        "background": 407,
+        "pothole": 24,
+        "evasive_maneuver": 11,
+        "emergency_braking": 30
+      }
+    },
+    {
+      "recording_id": "rec_5fbe1b677a54",
+      "windows": 201,
+      "annotation_presses": 17,
+      "decisions": {
+        "candidates": 305,
+        "missing_sensor_samples": 79,
+        "mixed_class": 2,
+        "background_guard": 23
+      },
+      "class_counts": {
+        "background": 175,
+        "pothole": 3,
+        "evasive_maneuver": 14,
+        "emergency_braking": 9
+      }
+    },
+    {
+      "recording_id": "rec_03b3da82b442",
+      "windows": 895,
+      "annotation_presses": 50,
+      "decisions": {
+        "candidates": 1017,
+        "missing_sensor_samples": 26,
+        "mixed_class": 4,
+        "background_guard": 92
+      },
+      "class_counts": {
+        "background": 805,
+        "pothole": 53,
+        "evasive_maneuver": 25,
+        "emergency_braking": 12
+      }
+    },
+    {
+      "recording_id": "rec_19357355d415",
+      "windows": 719,
+      "annotation_presses": 21,
+      "decisions": {
+        "candidates": 976,
+        "missing_sensor_samples": 221,
+        "mixed_class": 0,
+        "background_guard": 36
+      },
+      "class_counts": {
+        "background": 683,
+        "pothole": 18,
+        "evasive_maneuver": 5,
+        "emergency_braking": 13
+      }
+    },
+    {
+      "recording_id": "rec_b098d4de649b",
+      "windows": 41,
+      "annotation_presses": 1,
+      "decisions": {
+        "candidates": 43,
+        "missing_sensor_samples": 0,
+        "mixed_class": 0,
+        "background_guard": 2
+      },
+      "class_counts": {
+        "background": 39,
+        "pothole": 0,
+        "evasive_maneuver": 2,
+        "emergency_braking": 0
+      }
+    },
+    {
+      "recording_id": "rec_8991f2234adc",
+      "windows": 424,
+      "annotation_presses": 16,
+      "decisions": {
+        "candidates": 455,
+        "missing_sensor_samples": 0,
+        "mixed_class": 1,
+        "background_guard": 30
+      },
+      "class_counts": {
+        "background": 394,
+        "pothole": 13,
+        "evasive_maneuver": 9,
+        "emergency_braking": 8
+      }
+    },
+    {
+      "recording_id": "rec_788453ad69be",
+      "windows": 2399,
+      "annotation_presses": 87,
+      "decisions": {
+        "candidates": 2706,
+        "missing_sensor_samples": 139,
+        "mixed_class": 8,
+        "background_guard": 160
+      },
+      "class_counts": {
+        "background": 2244,
+        "pothole": 71,
+        "evasive_maneuver": 44,
+        "emergency_braking": 40
+      }
+    },
+    {
+      "recording_id": "rec_2834e0e40eca",
+      "windows": 1538,
+      "annotation_presses": 13,
+      "decisions": {
+        "candidates": 1578,
+        "missing_sensor_samples": 14,
+        "mixed_class": 0,
+        "background_guard": 26
+      },
+      "class_counts": {
+        "background": 1512,
+        "pothole": 16,
+        "evasive_maneuver": 6,
+        "emergency_braking": 4
+      }
+    },
+    {
+      "recording_id": "rec_823751e4ffca",
+      "windows": 895,
+      "annotation_presses": 40,
+      "decisions": {
+        "candidates": 1152,
+        "missing_sensor_samples": 196,
+        "mixed_class": 0,
+        "background_guard": 61
+      },
+      "class_counts": {
+        "background": 828,
+        "pothole": 32,
+        "evasive_maneuver": 14,
+        "emergency_braking": 21
+      }
+    }
+  ],
+  "provenance": "New windowing/quality/label policy over the original team's Sensor Logger recordings",
+  "excluded": {
+    "GPS": true,
+    "natural_rides": true,
+    "historic_features_models_and_augmentations": true
+  },
+  "background_definition": "No annotation in window or 1.28-second guard; not independently verified normal riding",
+  "known_limits": [
+    "Button-press time is a proxy for physical event timing; no verified event intervals",
+    "Recording-disjoint does not imply rider/session/device-disjoint",
+    "Offline centered binning/interpolation is not a validated causal embedded pipeline"
+  ]
+}

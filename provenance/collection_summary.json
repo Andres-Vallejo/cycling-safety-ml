@@ -1,0 +1,6 @@
+{
+  "recordings_with_metadata": 11,
+  "unique_logged_device_ids": 1,
+  "collection_days": 2,
+  "interpretation": "Recording holdout shares collection context; it is not a test on unseen phones or a verified unseen rider."
+}

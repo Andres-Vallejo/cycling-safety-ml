@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "retained_windows": 9453,
+  "recordings": 11,
+  "outer_folds": 5,
+  "same_held_out_assignments_mlp_and_cnn": true,
+  "inner_search_disjoint_from_outer_test": true,
+  "metrics_recomputed_from_oof": true,
+  "service_artifact_matches_new_refit": true,
+  "unchanged_academic_files_checked": 166
+}

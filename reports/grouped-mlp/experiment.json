@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "max_iter": 200,
+  "candidates": {
+    "majority": [
+      {}
+    ],
+    "logistic": [
+      {
+        "C": 0.1
+      },
+      {
+        "C": 1.0
+      }
+    ],
+    "mlp": [
+      {
+        "hidden_layer_sizes": [
+          32
+        ],
+        "alpha": 0.01
+      },
+      {
+        "hidden_layer_sizes": [
+          64,
+          32
+        ],
+        "alpha": 0.01
+      }
+    ]
+  },
+  "group_unit": "recording",
+  "deployment_family": "mlp",
+  "primary_metric": "pooled OOF four-class macro-F1",
+  "augmentation": "none",
+  "class_weighting": "balanced; recomputed on each training partition",
+  "preprocessing": "StandardScaler fitted only on each training partition",
+  "mlp_early_stopping": false,
+  "blas_threads": 1,
+  "data_sha256": "bc9ca63a6a48d12ce118a6950472d20e120a30fa9296080ad67aa22c2fbb45fc"
+}

@@ -1,0 +1,198 @@
+{
+  "family": "mlp",
+  "search": [
+    {
+      "candidate": 0,
+      "params": {
+        "hidden_layer_sizes": [
+          32
+        ],
+        "alpha": 0.01
+      },
+      "inner_fold": 0,
+      "macro_f1": 0.5197063042735942,
+      "train_recordings": [
+        "rec_19357355d415",
+        "rec_2834e0e40eca",
+        "rec_5fbe1b677a54",
+        "rec_6ecaaa29356c",
+        "rec_7c0af10a9845",
+        "rec_823751e4ffca",
+        "rec_8991f2234adc"
+      ],
+      "validation_recordings": [
+        "rec_03b3da82b442",
+        "rec_788453ad69be",
+        "rec_b098d4de649b",
+        "rec_fe6551e8ef67"
+      ],
+      "convergence_warnings": 1
+    },
+    {
+      "candidate": 0,
+      "params": {
+        "hidden_layer_sizes": [
+          32
+        ],
+        "alpha": 0.01
+      },
+      "inner_fold": 1,
+      "macro_f1": 0.3813321375533122,
+      "train_recordings": [
+        "rec_03b3da82b442",
+        "rec_5fbe1b677a54",
+        "rec_788453ad69be",
+        "rec_7c0af10a9845",
+        "rec_823751e4ffca",
+        "rec_b098d4de649b",
+        "rec_fe6551e8ef67"
+      ],
+      "validation_recordings": [
+        "rec_19357355d415",
+        "rec_2834e0e40eca",
+        "rec_6ecaaa29356c",
+        "rec_8991f2234adc"
+      ],
+      "convergence_warnings": 1
+    },
+    {
+      "candidate": 0,
+      "params": {
+        "hidden_layer_sizes": [
+          32
+        ],
+        "alpha": 0.01
+      },
+      "inner_fold": 2,
+      "macro_f1": 0.4817794643011245,
+      "train_recordings": [
+        "rec_03b3da82b442",
+        "rec_19357355d415",
+        "rec_2834e0e40eca",
+        "rec_6ecaaa29356c",
+        "rec_788453ad69be",
+        "rec_8991f2234adc",
+        "rec_b098d4de649b",
+        "rec_fe6551e8ef67"
+      ],
+      "validation_recordings": [
+        "rec_5fbe1b677a54",
+        "rec_7c0af10a9845",
+        "rec_823751e4ffca"
+      ],
+      "convergence_warnings": 1
+    },
+    {
+      "candidate": 0,
+      "params": {
+        "hidden_layer_sizes": [
+          32
+        ],
+        "alpha": 0.01
+      },
+      "mean_macro_f1": 0.460939302042677
+    },
+    {
+      "candidate": 1,
+      "params": {
+        "hidden_layer_sizes": [
+          64,
+          32
+        ],
+        "alpha": 0.01
+      },
+      "inner_fold": 0,
+      "macro_f1": 0.5420002417602536,
+      "train_recordings": [
+        "rec_19357355d415",
+        "rec_2834e0e40eca",
+        "rec_5fbe1b677a54",
+        "rec_6ecaaa29356c",
+        "rec_7c0af10a9845",
+        "rec_823751e4ffca",
+        "rec_8991f2234adc"
+      ],
+      "validation_recordings": [
+        "rec_03b3da82b442",
+        "rec_788453ad69be",
+        "rec_b098d4de649b",
+        "rec_fe6551e8ef67"
+      ],
+      "convergence_warnings": 1
+    },
+    {
+      "candidate": 1,
+      "params": {
+        "hidden_layer_sizes": [
+          64,
+          32
+        ],
+        "alpha": 0.01
+      },
+      "inner_fold": 1,
+      "macro_f1": 0.4570958689293425,
+      "train_recordings": [
+        "rec_03b3da82b442",
+        "rec_5fbe1b677a54",
+        "rec_788453ad69be",
+        "rec_7c0af10a9845",
+        "rec_823751e4ffca",
+        "rec_b098d4de649b",
+        "rec_fe6551e8ef67"
+      ],
+      "validation_recordings": [
+        "rec_19357355d415",
+        "rec_2834e0e40eca",
+        "rec_6ecaaa29356c",
+        "rec_8991f2234adc"
+      ],
+      "convergence_warnings": 1
+    },
+    {
+      "candidate": 1,
+      "params": {
+        "hidden_layer_sizes": [
+          64,
+          32
+        ],
+        "alpha": 0.01
+      },
+      "inner_fold": 2,
+      "macro_f1": 0.5585145176367613,
+      "train_recordings": [
+        "rec_03b3da82b442",
+        "rec_19357355d415",
+        "rec_2834e0e40eca",
+        "rec_6ecaaa29356c",
+        "rec_788453ad69be",
+        "rec_8991f2234adc",
+        "rec_b098d4de649b",
+        "rec_fe6551e8ef67"
+      ],
+      "validation_recordings": [
+        "rec_5fbe1b677a54",
+        "rec_7c0af10a9845",
+        "rec_823751e4ffca"
+      ],
+      "convergence_warnings": 1
+    },
+    {
+      "candidate": 1,
+      "params": {
+        "hidden_layer_sizes": [
+          64,
+          32
+        ],
+        "alpha": 0.01
+      },
+      "mean_macro_f1": 0.5192035427754526
+    }
+  ],
+  "selected": {
+    "hidden_layer_sizes": [
+      64,
+      32
+    ],
+    "alpha": 0.01
+  }
+}

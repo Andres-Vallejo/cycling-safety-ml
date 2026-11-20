@@ -1,0 +1,7 @@
+* text=auto eol=lf
+# Preserve hashed experiment evidence, numeric models and verbatim provenance.
+artifacts/** -text
+reports/** -text
+provenance/** -text
+*.png -text
+*.pt -text

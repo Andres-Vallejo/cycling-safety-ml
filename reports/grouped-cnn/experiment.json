@@ -1,0 +1,21 @@
+{
+  "seed": 42,
+  "outer_folds": 5,
+  "epochs": 15,
+  "batch_size": 256,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "architecture": "Conv1d(6,16,5)-ReLU-MaxPool2-Conv1d(16,32,3)-ReLU-GlobalAvgPool-Linear4",
+  "hyperparameter_selection": "none; fixed before held-out evaluation",
+  "normalization": "per-channel mean/std fitted only on the outer training recordings",
+  "class_weights": "balanced, recomputed only from outer training labels",
+  "augmentation": "none",
+  "input": [
+    128,
+    6
+  ],
+  "device": "cpu",
+  "cpu_threads": 2,
+  "data_sha256": "bc9ca63a6a48d12ce118a6950472d20e120a30fa9296080ad67aa22c2fbb45fc"
+}
