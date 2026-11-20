@@ -1,5 +1,7 @@
 # Cycling Safety ML
 
+[![Tests](https://github.com/Andres-Vallejo/cycling-safety-ml/actions/workflows/tests.yml/badge.svg)](https://github.com/Andres-Vallejo/cycling-safety-ml/actions/workflows/tests.yml)
+
 **Reproducible classification of cycling IMU windows, evaluated on held-out recordings.**
 
 An independent continuation by **Juan Andrés Vallejo Rozo** of the collaborative [CyclingSafety academic project](https://github.com/Andres-Vallejo/CyclingSafety). The original project remains intact. The [original team, source snapshot and license](AUTHORS.md) are explicitly preserved.

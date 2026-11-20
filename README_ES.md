@@ -1,5 +1,7 @@
 # Cycling Safety ML
 
+[![Pruebas](https://github.com/Andres-Vallejo/cycling-safety-ml/actions/workflows/tests.yml/badge.svg)](https://github.com/Andres-Vallejo/cycling-safety-ml/actions/workflows/tests.yml)
+
 **Clasificación reproducible de ventanas IMU de ciclismo, evaluada con grabaciones completas fuera del entrenamiento.**
 
 Esta es una evolución independiente mantenida por **Juan Andrés Vallejo Rozo**, construida sobre el [proyecto académico CyclingSafety](https://github.com/Andres-Vallejo/CyclingSafety). El original se conserva intacto y los [créditos del equipo y la licencia](AUTHORS.md) siguen explícitos.

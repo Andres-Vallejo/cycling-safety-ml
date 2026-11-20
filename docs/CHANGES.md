@@ -20,7 +20,7 @@ These changes are the scope of Juan Andrés's independent continuation. They do 
 
 ## Validation status
 
-The executed experiment reports and validation summary document actual results. Python tests, model export parity, source preservation and local inference are checked in this workspace. The CI workflow is prepared for a future repository publication; it has not run on GitHub yet.
+The executed experiment reports and validation summary document actual results. Python tests, model export parity, source preservation and local inference were checked locally. After public publication on November 20, 2026, [GitHub Actions passed on Ubuntu and Windows](https://github.com/Andres-Vallejo/cycling-safety-ml/actions/runs/44801308623): 17 core tests passed and one optional CNN test was skipped on each runner. All 18 tests, including the CNN test, passed in the local PyTorch environment.
 
 Docker was not installed on the host, so the image was not built or tested. The service itself was exercised through FastAPI's test client. No physical ESP32 validation, public hosting or external independent dataset evaluation is claimed.
 

@@ -12,7 +12,8 @@ Validated locally on Windows 11 with Python 3.12.10.
 - All **166 tracked academic files** match the preserved snapshot hashes. The original repository's working tree remains clean.
 - A Python wheel was built successfully from the new package.
 - Docker was unavailable on this host. The supplied Docker image was not built; the service itself was tested through FastAPI's test client.
-- The CI workflow is prepared but has not run on GitHub. No public service deployment or physical ESP32 test was performed.
+- [GitHub Actions passed on Ubuntu and Windows](https://github.com/Andres-Vallejo/cycling-safety-ml/actions/runs/44801308623) on November 20, 2026: 17 core tests passed and one optional CNN test was skipped on each runner. The CNN-specific test was executed locally as part of the 18-test suite.
+- No public service deployment or physical ESP32 test was performed.
 
 See [machine-readable result audit](validation.json), [feature-model training environment](grouped-mlp/environment.json) and [CNN training environment](grouped-cnn/environment.json).
 
